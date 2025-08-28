@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="post">
+        <h2>Campo de valor e formas de pagamentos para a doação:</h2>
+        <label for="valor">Insira um valor (R$): </label>
+        <input type="number" id="valor" name="valor" required>
+        <br><br><label for="pagamento">Forma de pagamento: 
+            <select name="pag" id="pag" required>
+                <option value=""></option>
+                <option value="cartaod">Débito</option>
+                <option value="cartaoc">Crédito</option>
+                <option value="pix">Pix</option>
+                <option value="boleto">Boleto</option>
+            </select>
+        </label>
+        <br><br><button type="submit">Enviar</button>
+            <button type="reset">Cancelar</button>
+        
+    </form>
+    
+</body>
+</html>
