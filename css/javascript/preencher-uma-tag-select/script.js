@@ -2,7 +2,7 @@ const container = document.getElementById("app");
 
 const label = document.createElement("label");
 label.htmlFor = "frutas-select";
-label.textContent = "Escolha uma fruta: ";
+label.textContent = "Escolha uma fruta:";
 label.style.fontWeight = "bold";
 label.classList.add("form-label");
 label.classList.add("m-1");
