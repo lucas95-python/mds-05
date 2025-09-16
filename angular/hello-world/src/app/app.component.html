@@ -1,25 +1,32 @@
 <mat-drawer-container class="example-container" [hasBackdrop]="true">
   <mat-drawer #drawer mode="over">
+
     <dl>
       <dt routerLink="">Home</dt>
+
       <dt>Data binding</dt>
       <dd routerLink="interpolation">Interpolation</dd>
-      <dd routerLink="property-biding">Property Binding</dd>
-      <dd routerLink="event-biding">Event Binding</dd>
-      <dd routerLink="two-way-data-binding">Two way data biding</dd>
+      <dd routerLink="property-binding">Property Binding</dd>
+      <dd routerLink="event-binding">Event binding</dd>
+      <dd routerLink="two-way-data-binding">Two way data binding</dd>
 
       <dt>Forms</dt>
       <dd routerLink="template-driven">Template Driven</dd>
 
       <dt>Angular</dt>
       <dd routerLink="button">Button</dd>
-      <dd routerLink="formField">Form Field</dd>
-  </dl>
+      <dd routerLink="form-field">Form Field</dd>
+      <dd routerLink="expansion-panel">Expansion panel</dd>
+      <dd routerLink="todo-list">Todo List</dd>
+
+    </dl>
+
   </mat-drawer>
   <mat-drawer-content>
 
     <mat-toolbar>
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <button (click)="drawer.toggle()" mat-icon-button class="example-icon"
+              aria-label="Example icon-button with menu icon">
         <mat-icon>menu</mat-icon>
       </button>
       <span>My App</span>
@@ -31,9 +38,6 @@
         <mat-icon>share</mat-icon>
       </button>
     </mat-toolbar>
-
-
-    <button mat-raised-button (click)="drawer.toggle()">Toggle drawer</button>
 
     <router-outlet></router-outlet>
   </mat-drawer-content>
